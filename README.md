@@ -92,3 +92,13 @@ We love receiving feedback! We're always looking to improve our challenges and o
 This challenge is completely free. Please share it with anyone who will find it useful for practice.
 
 **Have fun building!** 🚀
+
+## Objectives for this page
+- Use BEM methodolgy for css
+- Use Normalize
+- Use Semantic html
+- Use basic css architecture
+- Use of defer attribute for load js
+
+##what I learned
+- add specialcharacters with entity name
