@@ -1,6 +1,29 @@
 
 :root {
+
+    /*Primary colors*/
     --light-blue: rgb(61,190,255);
+    --Soft-red: hsl(7, 99%, 70%);
+    --Yellow: hsl(51, 100%, 49%);
+    --Dark-desaturated-cyan: hsl(167, 40%, 24%);
+    --Dark-blue: hsl(198, 62%, 26%);
+    --Dark-moderate-cyan: hsl(168, 34%, 41%);
+
+    /*Neutral colors*/
+    --Very-dark-desaturated-blue: hsl(212, 27%, 19%);
+    --Very-dark-grayish-blue: hsl(213, 9%, 39%);
+    --Dark-grayish-blue: hsl(232, 10%, 55%);
+    --Grayish-blue: hsl(210, 4%, 67%);
+    --White: hsl(0, 0%, 100%);
+
+    /*font size*/
+    --font-body: 18px;
+}
+
+
+/*-----body-----*/
+.body {
+    font-size: var(--font-body);
 }
 
 /*--------- header -------------*/
@@ -33,7 +56,6 @@
     font-size: 200px;
 }
 
-
 /*--------- sections -------------*/
 .section {
     display: flex;
@@ -56,17 +78,6 @@
     height: 100%;
 }
 
-.clients {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.client-card {
-    display: flex;
-    flex-direction: column;
-}
-
 .container {
     display: flex;
     flex-direction: row;
@@ -83,6 +94,63 @@
 }
 
 
+/*------clients---------*/
+
+.clients {
+    height: 80vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.clients__h1 {
+    color: var(--Grayish-blue);
+    text-transform: uppercase;
+    font-size:x-large;
+}
+
+.clients__container {
+    margin: 40px 0;
+    width: 75%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+/*--------clients cards---------*/
+
+.client-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 330px;
+}
+
+.client-card__img {
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+}
+
+.client-card__p {
+    margin: 50px 0;
+    text-align: center;
+}
+
+.client-card__title {
+    text-align: center;
+}
+
+.client-card__name {
+    font-weight: 700;
+}
+
+.client-card__position {
+    margin: 10px 0;
+    color: var(--Dark-grayish-blue);
+    font-size: 0.8em;
+}
+
 /*--------- footer -------------*/
 .footer {
     display: flex;
@@ -90,5 +158,5 @@
     justify-content: center;
     align-items: center;
     height: 300px;
-    background-color: hsl(168, 34%, 41%);
+    background-color: var(--Dark-moderate-cyan);
 }
