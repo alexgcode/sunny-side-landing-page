@@ -103,3 +103,4 @@ This challenge is completely free. Please share it with anyone who will find it 
 ##what I learned
 - add specialcharacters with entity name
 - the use of min-heigh with flex easier the responsive design
+- use filter property to change the color of a svg image (resource to convert hex color to filter: https://codepen.io/sosuke/pen/Pjoqqp)

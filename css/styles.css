@@ -160,28 +160,17 @@
 .footer {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
     min-height: 300px;
     background-color: var(--Dark-moderate-cyan);
 }
 
-.footer__wrapper {
-    text-align: center;
-}
-
-.footer__wrapper--first {
-    margin-top: 70px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
 .logo--footer {
-    text-align: center;
+    margin-top: 70px;
 }
 
-.logo--footer svg path {
+.logo--footer path {
     fill: var(--Dark-desaturated-cyan);
 }
 
@@ -201,19 +190,24 @@
     color: var(--White);
 }
 
+.social-media {
+    text-align: center;
+}
+
 .social-media__icon {
     margin: 0 10px;
 }
 
 .social-media__icon:hover {
     cursor: pointer;
+    filter: brightness(0) saturate(100%) invert(100%) sepia(2%) saturate(809%) hue-rotate(228deg) brightness(118%) contrast(100%);
 }
 
 .attribution { 
     display: inline;
     font-size: 11px; 
     text-align: center; 
-    justify-self: flex-end;
+    margin-top: auto;
 }
 .attribution a { 
     color: hsl(228, 45%, 44%); 
