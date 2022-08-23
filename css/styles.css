@@ -3,8 +3,10 @@
 
     /*Primary colors*/
     --light-blue: rgb(61,190,255);
-    --Soft-red: hsl(7, 99%, 70%);
-    --Yellow: hsl(51, 100%, 49%);
+    --Soft-red: hsl(7, 99%, 70%,0.2);
+    --Soft-red-active: hsl(7, 99%, 70%,1);
+    --Yellow: hsl(51, 100%, 49%,0.2);
+    --Yellow-active: hsl(51, 100%, 49%,1);
     --Dark-desaturated-cyan: hsl(167, 40%, 24%);
     --Dark-blue: hsl(198, 62%, 26%);
     --Dark-moderate-cyan: hsl(168, 34%, 41%);
@@ -85,6 +87,42 @@
 .text-card__h1 {
     padding-right: 5vw;
 }
+
+.text-card__link {
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: var(--Very-dark-desaturated-blue);
+}
+
+.text-card__link::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 10px;
+    border-radius: 5px;
+    background-color: var(--Yellow);
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    transform: translateY(15%);
+}
+
+.text-card__link:hover::after {
+    background-color: var(--Yellow-active);
+}
+
+.text-card__link--red::after {
+    background-color: var(--Soft-red);
+}
+
+.text-card__link--red:hover:after {
+    background-color: var(--Soft-red-active);
+}
+
+
 
 .section__image {
     width: 50%;
