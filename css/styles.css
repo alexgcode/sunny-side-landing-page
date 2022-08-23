@@ -63,6 +63,7 @@
 /*--------- sections -------------*/
 .section {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .section--reverse {
@@ -71,6 +72,18 @@
 
 .section__text {
     width: 50%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-card {
+    width: 29vw;
+}
+
+.text-card__h1 {
+    padding-right: 5vw;
 }
 
 .section__image {
@@ -94,7 +107,7 @@
 }
 
 .gallery__image {
-    width: 25%;
+    max-width: 25%;
 }
 
 

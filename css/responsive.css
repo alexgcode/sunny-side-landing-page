@@ -1,0 +1,39 @@
+
+@media (max-width:700px) {
+    
+    .image-object--mobile {
+        display: block;
+    }
+    .image-object--desktop {
+        display: none;
+    }
+
+    .section__text {
+        width: 100%;
+        min-height: 500px;
+    }
+    
+    .section__image {
+        width: 100%;
+    }
+
+    .gallery__image {
+        min-width: 50%;
+    }
+
+    .text-card {
+        width: 80vw;
+        text-align: center;
+    }
+}
+
+
+
+@media (min-width:701px) {
+    .image-object--mobile {
+        display: none;
+    }
+    .image-object--desktop {
+        display: block;
+    }
+}
