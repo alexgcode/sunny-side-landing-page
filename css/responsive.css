@@ -8,6 +8,21 @@
         display: none;
     }
 
+    .section__image--graphic-design {
+        background: url('../images/mobile/image-graphic-design.jpg');
+        background-size: cover;
+    }
+
+    .section__image--photography {
+        background: url('../images/mobile/image-photography.jpg');
+        background-size: cover;
+    }
+
+    .image-text__p {
+        margin-bottom: 4vw;
+    }
+    
+
     .section__text {
         width: 100%;
         min-height: 500px;

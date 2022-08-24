@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz@9..144&family=Roboto&display=swap');
 
 :root {
 
@@ -20,12 +22,17 @@
 
     /*font size*/
     --font-body: 18px;
+
+    /* font family */
+    --barlow: 'Roboto', sans-serif;
+    --Fraunces: 'Fraunces', serif;
 }
 
 
 /*-----body-----*/
 .body {
     font-size: var(--font-body);
+    font-family: var(--Fraunces);
 }
 
 /*--------- header -------------*/
@@ -126,6 +133,7 @@
 
 .section__image {
     width: 50%;
+    height: 80vh;
 }
 
 .section__image-object {
@@ -133,10 +141,31 @@
     height: 100%;
 }
 
-.container {
+.section__image--graphic-design {
+    background: url('../images/desktop/image-graphic-design.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.section__image--photography {
+    background: url('../images/desktop/image-photography.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.image-text {
+    width: 100%;
+    height: 100%;
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.image-text__p {
+    padding: 1vh 12.5vw;
+    margin-bottom: 10vh;
+    text-align: center;
 }
 
 .gallery {
