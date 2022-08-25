@@ -12,7 +12,7 @@
         background-repeat: no-repeat;
         background-size: cover;
         text-align: center;
-        width: 100vw;
+        width: 100%;
         height: calc(100vw * 1.43); /* 1.43 its the image ratio*/
     }
     
@@ -23,11 +23,15 @@
     .section__image--graphic-design {
         background: url('../images/mobile/image-graphic-design.jpg');
         background-size: cover;
+        width: 100%;
+        height: calc(100vw * 1.6);
     }
 
     .section__image--photography {
         background: url('../images/mobile/image-photography.jpg');
         background-size: cover;
+        width: 100%;
+        height: calc(100vw * 1.6);
     }
 
     .image-text__p {
@@ -42,6 +46,7 @@
     
     .section__image {
         width: 100%;
+        height: calc(100vw * 0.832);
     }
 
     .gallery__image {

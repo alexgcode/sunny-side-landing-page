@@ -76,8 +76,8 @@
     background-image: url("../images/desktop/image-header.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: 50% 80%;
-    height: 90vh;
+    width: 100%;
+    height: calc(100vw * 0.55);
 }
 .home img {
     visibility: hidden;
@@ -146,7 +146,7 @@
 
 .section__image {
     width: 50%;
-    height: 80vh;
+    height: calc(50vw * 0.83);
 }
 
 .section__image-object {
@@ -158,12 +158,16 @@
     background: url('../images/desktop/image-graphic-design.jpg');
     background-repeat: no-repeat;
     background-size: 100% 100%;
+    width: 50%;
+    height: 80vh;
 }
 
 .section__image--photography {
     background: url('../images/desktop/image-photography.jpg');
     background-repeat: no-repeat;
     background-size: 100% 100%;
+    width: 50%;
+    height: 80vh;
 }
 
 .image-text {
