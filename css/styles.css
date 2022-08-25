@@ -79,6 +79,9 @@
     background-position: 50% 80%;
     height: 90vh;
 }
+.home img {
+    visibility: hidden;
+}
 
 .principal-text {
     color: white;
