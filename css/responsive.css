@@ -57,6 +57,48 @@
         width: 80vw;
         text-align: center;
     }
+
+
+    /* navbar */
+    .logo {
+        width: 7.0em;
+    }
+    .nav__items {
+        display: none;
+    }
+
+    .nav__button {
+        display: block;
+    }
+
+    .nav__items.open {
+        display: block;
+    }
+
+    .nav__items::before {
+        content: "";
+        margin-left: auto;
+        position: relative;
+        top: -1.5rem;
+        border-width: 0 0 1.5rem 1.5rem;
+        border-style: solid;
+        border-color: white;
+        display: block;
+        width: 0;
+    }
+    
+    .nav__items {
+        background-color: white;
+        position: absolute;
+        top: 4.7em;
+        width: 90vw;
+        min-height: 10.1em;
+    }
+    .nav__item, .nav__item-contact {
+        display: block;
+        text-align: center;
+        margin: 2em auto;
+    }
 }
 
 
@@ -67,5 +109,13 @@
     }
     .image-object--desktop {
         display: block;
+    }
+
+    .nav__items {
+        display: block;
+    }
+
+    .nav__button {
+        display: none;
     }
 }
