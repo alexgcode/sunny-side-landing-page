@@ -61,6 +61,22 @@
     margin: auto;
 }
 
+.nav__item {
+    text-decoration: none;
+    color: white;
+    margin: 0 1em;
+}
+
+.nav__item-contact {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+    background-color: white;
+    border-radius: 1.5em;
+    margin: 0 1em;
+    padding: 0.5em 1em;
+}
+
 .nav__button {
     background: none;
     border:none;
